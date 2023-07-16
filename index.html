@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Word Scramble Game</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,6 +23,9 @@
     </div>
     <div class="puzzle" id="puzzle" style="display: none;"></div>
     <div class="answer" id="answer" ondrop="drop(event)" ondragover="allowDrop(event)" style="display: none;"></div>
+    <div class="wrong-message" id="wrong-message" style="display: none;">
+     <p></p>
+    </div>
     <div class="message" id="message" style="display: none;"></div>
     <div class="buttons" id="buttons" style="display: none;">
       <button class="button" id="skipButton" style="background-color: #642323;" onclick="skipWord()">Skip</button>
