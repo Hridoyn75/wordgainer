@@ -1,0 +1,228 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dcdcdc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  background-color: #e0e0e0;
+}
+
+.puzzle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4% 2%;
+}
+
+
+.letter {
+  width: 77px;
+  height: 46px;
+  text-align: center;
+  line-height: 44px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #f9f9f9;
+  color: #333;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 10px;
+  box-shadow: inset -3px -4px 12px black;
+}
+
+.letter:hover {
+  background-color: #e0e0e0;
+}
+
+.answer {
+  min-height: 60px;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.answer.valid {
+  background-color: #e0f7e0;
+}
+
+.answer.invalid {
+  background-color: #f7e0e0;
+}
+
+.message {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.button {
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button:active {
+  background-color: #3d8b3d;
+}
+
+.score-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.score-label {
+  font-weight: bold;
+}
+
+.score-value {
+  margin-left: 5px;
+}
+
+.new-game-button {
+  display: flex;
+  justify-content: center;
+}
+
+.new-game-button button {
+  padding: 12px 24px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.new-game-button button:hover {
+  background-color: #1976d2;
+}
+
+.new-game-button button:active {
+  background-color: #0d47a1;
+}
+
+.congrats-message {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+}
+
+.skip-info {
+  margin-top: 10px;
+  text-align: center;
+  color: #777;
+}
+.clue-container{
+  padding: 5px 15px;
+  background: gainsboro;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
+  user-select: none;
+}
+
+#wrong-message p{
+  margin-top: 0;
+  text-align: center;
+  padding: 10px;
+}
+#wrong-message p span{
+  padding: 10px;
+  background: #00ffa1;
+  border-radius: 10px;
+}
+#congratsMessage{
+  background: lime;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset -5px -5px 16px #3e3b3b;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+}
